@@ -1,8 +1,8 @@
-import { Pokemon as PokemonTye } from 'src/types/Pokemon.type'
+import { Pokemon as PokemonType } from 'src/types/Pokemon.type'
 import Pokemon from '../Pokemon'
 
 interface Props {
-  pokemons: PokemonTye[]
+  pokemons: PokemonType[]
 }
 
 function PokemonColection(props: Props) {
@@ -10,7 +10,7 @@ function PokemonColection(props: Props) {
 
   return (
     <div className=' mx-4 mt-6 grid grid-cols-6'>
-      {pokemons.map((pokemon: PokemonTye) => (
+      {pokemons.map((pokemon: PokemonType) => (
         <div key={pokemon.id} className='mx-6 my-4  gap-8'>
           <Pokemon
             name={pokemon.name}
